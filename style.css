@@ -1,27 +1,88 @@
-nav {
-    position: relative;
+nav ul {
+  margin-right: 10px;
 }
 
-nav ul {
-    margin-right: 10px;
+.navbar-brand {
+    font-family: "Jost", sans-serif;
+    font-weight: 900;
+    font-style: italic;
 }
 
 #presentacion {
-    background: #37517e;
-    color:white
+  background: #37517e;
+  color: white;
 }
 
+#presentacion h1 {
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+}
+
+#presentacion h2 {
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#servicios {
+    background-color: #f3f5fa;
+}
+
+#servicios h3{
+    color: #37517e;
+}
+
+
 .img-presentacion {
-max-width: 100%;
-height: auto;
+  max-width: 80%;
+  height: auto;
 }
 
 footer {
-    color: white;
+  color: white;
 }
 
-@media (max-width:992px) {
-    #btnContacto {
-        margin-top: 15px;
-    }
+footer a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+footer i {
+  font-size: 28px;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  #btnContacto {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  #servicios-fila-1 div,
+  #servicios-fila-2 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  footer div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .col-redes {
+    margin-bottom: 15px;
+  }
+
+  .col-terminos {
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
 }
