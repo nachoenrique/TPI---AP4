@@ -1,0 +1,27 @@
+nav {
+    position: relative;
+}
+
+nav ul {
+    margin-right: 10px;
+}
+
+#presentacion {
+    background: #37517e;
+    color:white
+}
+
+.img-presentacion {
+max-width: 100%;
+height: auto;
+}
+
+footer {
+    color: white;
+}
+
+@media (max-width:992px) {
+    #btnContacto {
+        margin-top: 15px;
+    }
+}
