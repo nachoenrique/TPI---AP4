@@ -1,15 +1,33 @@
+-- Quita los botones de subir y bajar 
+#telefono::-webkit-inner-spin-button, 
+#telefono::-webkit-outer-spin-button { 
+  -webkit-appearance: none !important; 
+  margin: 0; 
+}
+
 nav ul {
   margin-right: 10px;
 }
 
 .navbar-brand {
-    font-family: "Jost", sans-serif;
-    font-weight: 900;
-    font-style: italic;
+  font-family: "Jost", sans-serif;
+  font-weight: 900;
+  font-style: italic;
 }
 
 #presentacion {
-  background: #37517e;
+  background: #16222a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3a6073,
+    #16222a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #3a6073,
+    #16222a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   color: white;
 }
 
@@ -21,17 +39,16 @@ nav ul {
 #presentacion h2 {
   font-family: "Jost", sans-serif;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 #servicios {
-    background-color: #f3f5fa;
+  background-color: #f3f5fa;
 }
 
-#servicios h3{
-    color: #37517e;
+#servicios h3 {
+  color: #37517e;
 }
-
 
 .img-presentacion {
   max-width: 80%;

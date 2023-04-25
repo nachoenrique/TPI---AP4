@@ -196,40 +196,40 @@
                   <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body border-0 p-4">
-                  <form id="contacto-form">
+                  <form id="contacto-form" class="needs-validation" novalidate>
 
-                    <div class="form-floating mb-3">
-                          <input class="form-control" id="nombre" type="text" placeholder="Ingrese su nombre" data-sb-validations="required" />
+                    <div class="form-floating mb-3" id="div-nombre">
+                          <input class="form-control" id="nombre" name="nombre" type="text" autocomplete="off"/>
                           <label for="nombre">Nombre</label>
-                          <div class="invalid-feedback" data-sb-feedback="name:required">El nombre es requerido.</div>
+                          <div class="invalid-feedback">El nombre es requerido y sin caracteres.</div>
                       </div>
                       
-                      <div class="form-floating mb-3">
-                          <input class="form-control" id="email" type="email" placeholder="name@ejemplo.com" data-sb-validations="required,email" />
+                      <div class="form-floating mb-3" id="div-email">
+                          <input class="form-control" id="email" name="email" type="email" autocomplete="off"/>
                           <label for="email">Email</label>
-                          <div class="invalid-feedback" data-sb-feedback="email:required">El email es requerido.</div>
-                          <div class="invalid-feedback" data-sb-feedback="email:email">Email no valido.</div>
+                          <div class="invalid-feedback">El email ingresado no es valido.</div>
                       </div>
 
-                      <div class="form-floating mb-3">
-                          <input class="form-control" id="telefono" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                      <div class="form-floating mb-3" id="div-telefono">
+                          <input class="form-control" id="telefono" name="telefono" type="number" autocomplete="off"/>
                           <label for="telefono">Teléfono</label>
-                          <div class="invalid-feedback" data-sb-feedback="phone:required">El número de teléfono es requerido.</div>
+                          <div class="invalid-feedback">El teléfono ingresado no es valido.</div>
                       </div>
 
-                      <div class="form-floating mb-3">
-                          <textarea class="form-control" id="mensaje" type="text" placeholder="Ingrese un mensaje" style="height: 10rem" data-sb-validations="required"></textarea>
+                      <div class="form-floating mb-3" id="div-mensaje">
+                          <textarea class="form-control" id="mensaje" name="mensaje" type="text" style="height: 10rem" autocomplete="off"></textarea>
                           <label for="mensaje">Mensaje</label>
-                          <div class="invalid-feedback" data-sb-feedback="message:required">Déjanos un mensaje.</div>
+                          <div class="invalid-feedback">Déjanos un mensaje.</div>
                       </div>
           
-                      <div class="d-grid"><button class="btn btn-primary rounded-pill btn-lg disabled" id="submitButton" type="submit">Enviar</button></div>
+                      <div class="d-grid"><button class="btn btn-primary rounded-pill btn-lg" id="submitButton" type="submit">Enviar</button></div>
                   </form>
-              </div>
+              </div>  
           </div>
       </div>
   </div>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script src="function.js"></script>
   </body>
 </html>

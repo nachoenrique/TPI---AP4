@@ -1,12 +1,18 @@
 {
-  "posts": [
+  "mensajes": [
     {
-      "id": 1,
-      "title": "hello"
+      "nombre": "Walter Enrique",
+      "email": "nacho.enrique.97@gmail.com",
+      "telefono": "3854408133",
+      "mensaje": "Prueba de post",
+      "id": 1
+    },
+    {
+      "nombre": "Leo Messi",
+      "email": "leo@messi.com",
+      "telefono": "321546655",
+      "mensaje": "Somos campeones  ☆ ☆ ☆",
+      "id": 2
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  },
-  "mensajes": []
+  ]
 }
